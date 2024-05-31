@@ -1,0 +1,491 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+.nav{
+  height: 2rem;
+  background:rgb(249, 248, 250);
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI';
+  font-size: medium;
+  font-weight: 800;
+  padding-top: 20px;
+  color: #3842ce;
+  
+  
+
+}
+
+.inter{font-size: 10px;
+  margin-left: 2rem;
+
+}
+
+nav{
+  display: flex;
+  
+  background: rgb(250, 248, 248);
+  /* width: 20%; */
+  margin-left: 4rem;
+  /* border: 2px solid; */
+  /* font-family: sans-serif; */
+
+  
+  width: 200px;
+  
+}
+
+
+
+li{
+  display: inline;
+  color: rgb(247, 241, 241);
+  
+  justify-content: space-between;
+  margin-left: 25px;
+ }
+
+ li a{
+  color: black;
+  text-decoration: none;
+  
+ }
+
+
+ .bar{
+  position: absolute;
+  left: 40%;
+  top: 1rem;
+  /* border: 2px solid ; */
+
+ }
+ .bar ul li a:hover{
+  color: blue;
+  /* font-size: 20px; */
+ 
+ }
+
+ /* .first{
+  width: 100%;
+  height: 100vh;
+  border: 2px solid;
+  background: salmon;
+  position: absolute;
+  top: 4rem;
+ } */
+
+ .slideshow-container{
+  position: absolute;
+  top: 1rem;
+ }
+ .get b i{
+  rotate: 240deg;
+ }
+
+ /* 
+ 
+ 
+ ..........................................................>slide  page ka code */
+ .slideshow-container {
+  max-width: 1300px;
+  /* height: 500px; */
+  /* max-height: 200px; */
+  position: relative;
+  margin: auto;
+
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+#text{
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* .........................text */
+#text{
+  border: 2 px solid red;
+  background: clack;
+  position: absolute;
+  top: 40%;
+  left: 5%;
+
+  font-size: 50px;
+}
+
+#text p{
+  font-size: 12px;
+}
+
+.get{
+  width: 8rem;
+  height: 2rem;
+  font-size: 21px;
+  background: rgb(205, 128, 5);
+}
+
+
+/* ..........................................................................................>seceond page */
+
+
+
+
+#mt{
+  position: absolute;
+  left: 45%;
+  top: 95%;
+
+}
+
+.seceond_p{
+  width: 100%;
+  height: 100vh;
+  /* border: 2 px solid red; */
+  /* background: black; */
+  display: flex;
+
+}
+
+.seceond_1{
+  width: 47%;
+  height: 100%;
+  /* background: red; */
+  margin-left: 10px;
+  background-image: url(./photo/man.PNG);
+
+  background-position: center;
+  background-size:cover ;
+
+  background-repeat: no-repeat;
+  object-fit: cover;
+
+  
+
+}
+
+.seceond_2{
+  width: 45%;
+  margin-left: 3rem;
+  height: 100%;
+  /* background: rgb(247, 247, 249); */
+  background:rgb(252, 252, 251);
+  /* scroll-behavior: smooth; */
+
+}
+
+.seceond_2 h2{
+  font-size: 50px;
+  font-family: sans-serif;
+  margin-top: 20px;
+  margin-left: 5px;
+}
+.seceond_2 p{
+  font-family:  sans-serif;
+}
+
+.seceond_2 button{
+  margin-top: 20px;
+  
+}
+
+/* <!-- .......................................................................................>Third page of styling --> */
+
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+  background: #ffffff;
+  width: 80%;
+  height: 25vh;
+}
+
+.rem{
+  display: flex;
+
+}
+
+.pht h2{
+  margin-top: 2rem;
+  color: blue;
+  /* margin-left: 10rem; */
+}
+.pht{
+  display: flex;
+  width: 100%;
+  height: 120vh;
+}
+
+.rem .card{
+  margin-top: 12rem;
+  margin-right: auto;
+}
+
+.lorem{
+  /* background: black; */
+  width: 40%;
+  left: 30rem;
+}
+/* ...................................fourth page of  stylinh */
+.four{
+  width: 100%;
+  height: 100vh;
+  /* border: 2px solid red; */
+  display: flex;
+  position: relative;
+  
+
+  
+}
+.four1{
+  padding: 10px;
+  width: 20%;
+  height: 50vh;
+  /* border: 2px solid red; */
+  margin-top: 9rem;
+  margin-left: 1.5rem;
+  box-shadow:2px 2px 2px 2px rgb(157, 157, 170) ;
+
+}
+
+.lorem1{
+  left: 27rem;
+  width: 600px;
+}
+.i{
+  margin-top: 50px;
+}
+/* .............................. fifth page */
+.fifth{
+  background: black;
+  justify-content: center;
+  align-items: center;
+}
+.fifth h2{
+  margin-left: 30%;
+  
+  
+}
+.mulphoto{
+  width: 70%;
+  height: 35vh;
+  /* background-color: black; */
+  margin-left: 22%;
+  margin-top: 2rem;
+}
+.mulphoto img{
+  border-radius: 50%;
+  cursor: pointer;
+}
+.mulphoto img:hover{
+  width: 25%;
+}
+.lr{
+  color: white;
+  margin-left: 30%;
+}
+
+.gg{
+  color: white;
+  margin-left:48% ;
+  margin-top: 1rem;
+}
+
+/* .............................. six page */
+.six{
+  width: 100%;
+  height: 60vh;
+  /* border: 2px solid red; */
+  position: relative;
+
+}
+.six h2{
+  text-align: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.six img{
+  position: absolute;
+  top: 30%;
+  width: 300px;
+  left: 40%;
+
+
+}
+
+
+footer{
+  width: 100%;
+  height: 50vh;
+  background-color: black;
+}
+.ll {
+  margin-left:1rem;
+  position: relative;
+ 
+  padding: 1.5rem 0;
+}
+.ll img{
+  margin-top: 10px;
+  margin-left: 10px;
+}
+/* .tll{
+  font-family: sans-serif;
+  font-size: 18px;
+  margin-top: 5px;
+ 
+} */
+.ll p{
+  margin-left: 20px;
+  color: white;
+}
+.logol{
+  display: flex;
+  margin-top: 2rem;
+}
+.logol p i{
+  width: 20px;
+  height: 20px;
+  color: wheat;
+}
+
+.linkl{
+  position: absolute;
+  left: 35%;
+  top: 25%;
+}
+.linkl p a{
+  color: white;
+  font-size: 25px;
+  text-decoration: none;
+  margin-top: 2rem;
+  
+}
+.linkl p{
+  margin-top: 20px;
+}
+.lk{
+  position: absolute;
+  top: 25%;
+  left: 50%;
+}
+.lk p a{
+  color: white;
+  font-size: 25px;
+  text-decoration: none;
+  margin-top: 2rem;
+}
+.lk p{
+  margin-top: 30px;
+}
+.last{
+  position: absolute;
+  top: 25%;
+  right: 10%;
+}
+
+.last p{
+  margin-top: 30px;
+  color: white;
+  padding-left: 1rempx;
+}
+.last p a{
+  color: white;
+}
+
+span{
+
+  /* color:  rgb(227, 155, 11); */
+  font-size: larger;
+  border-bottom: 5px solid  rgb(227, 155, 11);
+}
+
